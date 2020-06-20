@@ -5,6 +5,7 @@
  * @low: the lower index
  * @hight: the highter index
  * @size: the size of the array
+ * Return: an integer
 */
 int partition(int *array, int low, int hight, size_t size)
 {
@@ -39,7 +40,7 @@ void sort(int *array, int low, int hight, size_t size)
 {
 	int pivot;
 
-	if(low < hight)
+	if (low < hight)
 	{
 		pivot = partition(array, low, hight, size);
 		sort(array, low, pivot - 1, size);
